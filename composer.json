@@ -1,13 +1,17 @@
 {
-    "name": "pw_single_icon_list",
+    "name": "crafterr/pw_single_icon_list",
     "type": "drupal-module",
     "description": "Provides a simple icon title and description and url",
-    "keywords": [
-    ],
-    "homepage": "https://www.drupal.org/project/pw_single_icon_list",
+    "keywords": ["Drupal"],
+    "license": "MIT",
     "minimum-stability": "dev",
-    "support": {
-        "issues": "https://www.drupal.org/project/issues/pw_single_icon_list",
-        "source": "http://cgit.drupalcode.org/pw_single_icon_list",
+    "require": {
+        "php": ">=7.1"
     },
+    "authors": [
+        {
+            "name": "Adam Pietras",
+            "email": "adam@crafter.net.pl"
+        }
+    ]
 }
