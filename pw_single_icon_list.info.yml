@@ -1,0 +1,5 @@
+name: 'Pw Single Icon List'
+type: module
+description: 'Provides a simple icon title and description and url'
+core: 8.x
+package: 'PixelWeb'

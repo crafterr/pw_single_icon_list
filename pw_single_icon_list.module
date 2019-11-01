@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains pw_single_icon_list.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pw_single_icon_list_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pw_single_icon_list module.
+    case 'help.page.pw_single_icon_list':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a simple icon title and description and url') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pw_single_icon_list_theme() {
+  return [
+    'field__paragraph__field_pw_title__pw_single_icon_list' => [
+      'base hook' => 'field',
+    ],
+    'field__paragraph__field_pw_icon__pw_single_icon_list' => [
+      'base hook' => 'field',
+    ],
+    'field__paragraph__field_pw_long_text_pw_single_icon_list' => [
+      'base hook' => 'field',
+    ],
+    'paragraph__pw_single_icon_list' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

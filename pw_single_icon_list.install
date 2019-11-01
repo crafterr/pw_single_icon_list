@@ -1,0 +1,15 @@
+<?php
+const PW_SINGLE_ICON_LIST_PARAGRAPH_NAME = 'pw_single_icon_list';
+
+function pw_single_icon_list_uninstall(){
+
+  $paragraph_types = array(PW_SINGLE_ICON_LIST_PARAGRAPH_NAME);
+  foreach ($paragraph_types as $paragraph_type) {
+    $para_type = \Drupal::entityTypeManager()->getStorage('paragraphs_type')->load($paragraph_type);
+    if ($para_type) {
+      $para_type->delete();
+    }
+  }
+}
+
+

@@ -1,0 +1,7 @@
+status: true
+dependencies: {  }
+id: pw_single_icon_list
+label: 'Pw Single Icon List'
+icon_uuid: null
+description: 'Provides a simple icon title and description and url'
+behavior_plugins: {  }

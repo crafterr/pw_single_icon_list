@@ -1,0 +1,19 @@
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pw_long_text
+    - paragraphs.paragraphs_type.pw_single_icon_list
+  module:
+    - text
+id: paragraph.pw_single_icon_list.field_pw_long_text
+field_name: field_pw_long_text
+entity_type: paragraph
+bundle: pw_single_icon_list
+label: 'Long Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

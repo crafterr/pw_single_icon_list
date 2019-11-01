@@ -1,0 +1,42 @@
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pw_single_icon_list.field_pw_icon
+    - field.field.paragraph.pw_single_icon_list.field_pw_link
+    - field.field.paragraph.pw_single_icon_list.field_pw_long_text
+    - field.field.paragraph.pw_single_icon_list.field_pw_title
+    - paragraphs.paragraphs_type.pw_single_icon_list
+  module:
+    - image
+    - text
+id: paragraph.pw_single_icon_list.default
+targetEntityType: paragraph
+bundle: pw_single_icon_list
+mode: default
+content:
+  field_pw_icon:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_pw_long_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pw_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_pw_link: true
